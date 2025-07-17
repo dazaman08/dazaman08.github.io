@@ -4,32 +4,56 @@
   <meta charset="UTF-8">
   <title>Hoja de Vida - Sergio David Daza</title>
   <style>
+    /* Fondo tecnológico con animación */
     body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 40px;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: moverFondo 15s ease infinite;
+      color: white;
     }
+
+    @keyframes moverFondo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     .cv {
       max-width: 700px;
-      margin: auto;
-      background: #fff;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
     }
-    h1 {
-      color: #2c3e50;
+
+    h1, h2 {
+      color: #00ffff;
+      text-align: center;
     }
-    h2 {
-      color: #34495e;
-      border-bottom: 1px solid #ddd;
+
+    p, li {
+      line-height: 1.6;
     }
-    p {
-      margin: 5px 0;
+
+    ul {
+      padding-left: 20px;
     }
+
     a {
-      color: #2980b9;
+      color: #1abc9c;
       text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .linkedin {
+      text-align: center;
+      margin-top: 15px;
     }
   </style>
 </head>
@@ -38,7 +62,10 @@
     <h1>Sergio David Daza</h1>
     <p><strong>Rol:</strong> Auxiliar de Sistemas | Estudiante de desarrollo de software</p>
     <p><strong>Ubicación:</strong> Suba, Bogotá, Colombia</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dazaman08" target="_blank">linkedin.com/in/dazaman08</a></p>
+
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/in/dazaman08" target="_blank">🌐 Visita mi LinkedIn</a>
+    </div>
 
     <h2>Perfil Profesional</h2>
     <p>Estudiante apasionado por el desarrollo de software con conocimientos en sistemas operativos, soporte técnico e IT. Experiencia previa como agente de soporte para Uber en EE.UU. y Canadá.</p>
